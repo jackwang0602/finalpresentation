@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晚餐吃啥呢?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-history-wrapper">
+            <div class="input-container">
+                <input type="text" id="userInput" placeholder="輸入晚餐...">
+                    <button onclick="addInput()">輸入</button>
+            </div>
+            <div class="history-container">
+                <p>已輸入過的選項 (共 <span id="optionCount">0</span> 個):</p>
+                <ul id="inputHistory"></ul>
+            </div>
+        </div>
+                
+        <div class="canvas-container">
+            <button onclick="drawWheel()">畫出輪盤</button>
+            <canvas id="wheelCanvas" width="400" height="400"></canvas>
+            <button onclick="spinWheel()">旋轉輪盤</button> <!-- Spin button added -->
+        </div>
+    </div>
+        
+    <script src="main.js"></script>
+
+</body>
+</html>

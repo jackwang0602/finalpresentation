@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: space-around; /* Distribute items horizontally */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.input-history-wrapper {
+    text-align: left; /* Align content in this wrapper to the left */
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Spacing between input/history and canvas */
+}
+
+.canvas-container {
+    flex: 1; /* Take up remaining space */
+    text-align: center; /* Align content in this container to the center */
+}
+
+canvas {
+    border: 1px solid #000;
+}
+
+.input-container {
+    text-align: center;
+    margin-bottom: 20px; /* Increased spacing below the input button */
+}
+
+.input-container input {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.history-container {
+    margin-top: 20px;
+}
+
+.history-container p {
+    font-size: 16px;
+}
+
+.history-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history-container li {
+    margin-bottom: 10px; /* Increased spacing between each input option */
+    display: flex;
+    align-items: center;
+}
+
+.history-container li .delete-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: red;
+}
+
+.history-container li .delete-icon:hover {
+    color: darkred;
+}
